@@ -4,7 +4,7 @@ import { Code2 } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <nav className="bg-black/90 backdrop-blur-sm fixed w-full z-50 border-b border-purple-900/20">
+    <nav className="bg-black/70 backdrop-blur-sm fixed w-[90vw] left-1/2 transform -translate-x-1/2 z-50 border-b border-purple-900/20 m-4 rounded-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
