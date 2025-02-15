@@ -27,7 +27,7 @@ const Events = () => {
   ];
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-24 pb-16 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">ALL EVENTS</h1>
@@ -35,9 +35,9 @@ const Events = () => {
             <input
               type="text"
               placeholder="Search events..."
-              className="w-full px-4 py-2 bg-purple-900/20 border border-purple-500/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
+              className="w-full px-4 py-2 bg-purple-100 dark:bg-purple-900/20 border border-purple-500/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-900 dark:text-white transition-colors duration-300"
             />
-            <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-purple-400">
+            <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-purple-700 dark:text-purple-400">
               Search
             </button>
           </div>
@@ -45,7 +45,11 @@ const Events = () => {
 
         <div className="space-y-8">
           {events.map((event, index) => (
-            <div key={index} className="bg-gradient-to-r from-purple-900/20 to-black border border-purple-500/20 rounded-xl overflow-hidden">
+            <div 
+              key={index} 
+              className="rounded-xl overflow-hidden border border-purple-500/20 transition-colors duration-300 
+                         bg-gradient-to-r from-purple-100 to-gray-200 dark:from-purple-900/20 dark:to-black"
+            >
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="md:col-span-1">
                   <img
@@ -57,12 +61,12 @@ const Events = () => {
                 <div className="md:col-span-2 p-6">
                   <div className="flex items-start justify-between mb-4">
                     <h2 className="text-2xl font-bold">{event.title}</h2>
-                    <event.icon className="w-6 h-6 text-purple-400" />
+                    <event.icon className="w-6 h-6 text-purple-600 dark:text-purple-400" />
                   </div>
-                  <p className="text-gray-300 mb-6">{event.description}</p>
+                  <p className="text-gray-900 dark:text-gray-300 mb-6">{event.description}</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-purple-400">{event.date}</span>
-                    <button className="px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors">
+                    <span className="text-purple-600 dark:text-purple-400">{event.date}</span>
+                    <button className="px-6 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors">
                       Learn More
                     </button>
                   </div>
