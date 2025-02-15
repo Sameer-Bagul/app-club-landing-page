@@ -13,7 +13,7 @@ const Team = () => {
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80"
     },
     {
-      name: "Shlok Oswal",
+      name: "Ritika Oswal",
       role: "Secretary",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80"
     }
@@ -38,10 +38,10 @@ const Team = () => {
   ];
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-24 pb-16 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold mb-2">MEET OUR <span className="text-purple-500">TEAM</span></h1>
-        <p className="text-gray-400 mb-12">The passionate individuals behind App Club</p>
+        <p className="text-gray-600 dark:text-gray-400 mb-12">The passionate individuals behind App Club</p>
 
         {/* Core Leadership */}
         <div className="mb-16">
@@ -55,10 +55,11 @@ const Team = () => {
                     alt={member.name}
                     className="w-full h-72 object-cover transition-transform group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-white/10 dark:from-black/80 dark:to-transparent" />
                   <div className="absolute bottom-0 left-0 p-4">
-                    <h3 className="text-xl font-bold">{member.name}</h3>
-                    <p className="text-purple-400">{member.role}</p>
+                    <h3 className="text-xl font-bold text-white dark:text-gray-200">{member.name}</h3>
+                    <p className="text-purple-300 dark:text-purple-400">{member.role}</p>
                   </div>
                 </div>
               </div>
@@ -78,10 +79,10 @@ const Team = () => {
                     alt={member.name}
                     className="w-full h-72 object-cover transition-transform group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-white/10 dark:from-black/80 dark:to-transparent" />
                   <div className="absolute bottom-0 left-0 p-4">
-                    <h3 className="text-xl font-bold">{member.name}</h3>
-                    <p className="text-purple-400">{member.role}</p>
+                    <h3 className="text-xl font-bold text-white dark:text-gray-200">{member.name}</h3>
+                    <p className="text-purple-300 dark:text-purple-400">{member.role}</p>
                   </div>
                 </div>
               </div>

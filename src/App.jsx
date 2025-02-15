@@ -12,7 +12,8 @@ import Feedback from './pages/Feedback';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-black text-white">
+     
+      <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
