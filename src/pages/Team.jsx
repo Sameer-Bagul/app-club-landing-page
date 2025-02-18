@@ -33,7 +33,7 @@ const Team = () => {
       name: "Anishka Pannalkar",
       role: "Logistics/Events",
       image: "src/img/Logistics_Head_Anishka Pannalkar.jpg",
-      url:"     "
+      url:"https://www.linkedin.com/in/anishka-pannalkar-994b64321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
       name: "Ruchita Deodikar",
