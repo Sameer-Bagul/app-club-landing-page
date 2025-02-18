@@ -33,7 +33,7 @@ const Team = () => {
       name: "Anishka Pannalkar",
       role: "Logistics/Events",
       image: "src/img/Logistics_Head_Anishka Pannalkar.jpg",
-      url:""
+      url:"     "
     },
     {
       name: "Ruchita Deodikar",
