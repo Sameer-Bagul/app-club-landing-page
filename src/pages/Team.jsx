@@ -5,17 +5,20 @@ const Team = () => {
     {
       name: "Aayush Kulkarni",
       role: "President",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80"
+      image: "src/img/President_AayushKulkarni.png",
+      url:"https://www.linkedin.com/in/kulkarniaayush"
     },
     {
-      name: "Devika Jhanwar",
+      name: "Devika Jhawar",
       role: "Vice-President",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80"
+      image: "src/img/VicePresident_Devika.jpeg",
+      url:"https://www.linkedin.com/in/devika-jhawar/"
     },
     {
       name: "Ritika Oswal",
       role: "Secretary",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80"
+      image: "src/img/Secretary_RitikaOswal.png",
+      url:"https://www.linkedin.com/in/ritika-oswal-40b060309/"
     }
   ];
 
@@ -23,17 +26,39 @@ const Team = () => {
     {
       name: "Sameer Bagul",
       role: "Technical",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80"
+      image: "src/img/TechTeamHeadSameer.jpg",
+      url:"https://www.linkedin.com/in/sameer-bagul/"
     },
     {
-      name: "Anshika Pansurkar",
+      name: "Anishka Pannalkar",
       role: "Logistics/Events",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80"
+      image: "src/img/Logistics_Head_Anishka Pannalkar.jpg",
+      url:"     "
     },
     {
-      name: "Ruchika Deodikar",
+      name: "Ruchita Deodikar",
       role: "Marketing",
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80"
+      image: "src/img/Marketing_Head_RuchitaDeodhar (1).png",
+      url:"https://www.linkedin.com/in/ruchita-deodhar-8b498528a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+
+    {
+      name: "Ritika Mahajan",
+      role: "Media",
+      image: "src/img/Media_Tanishka_Narkhede.jpg",
+      url:"https://www.linkedin.com/in/ritika-m-052934215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      name: "Akash Deshmukh",
+      role: "Documentation",
+      image: "src/img/Documentation_Head_Akash Deshmukh.jpg",
+      url:"https://www.linkedin.com/in/akash-deshmukh410"
+    },
+    {
+      name: "Vivek Gaikwad",
+      role: "Treasurer",
+      image: "src/img/Vivek Gaikwad_treasurer.JPG",
+      url:"https://www.linkedin.com/in/vivek-gaikwad-6a533b284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
   ];
 
@@ -49,7 +74,7 @@ const Team = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {coreTeam.map((member, index) => (
               <div key={index} className="group">
-                <div className="relative overflow-hidden rounded-xl mb-4">
+                <div className="relative overflow-hidden rounded-xl mb-4 cursor-pointer" onClick={() => member.url && window.open(member.url, "_blank", "noopener noreferrer")}>
                   <img
                     src={member.image}
                     alt={member.name}
@@ -73,7 +98,7 @@ const Team = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {teamHeads.map((member, index) => (
               <div key={index} className="group">
-                <div className="relative overflow-hidden rounded-xl mb-4">
+                <div className="relative overflow-hidden rounded-xl mb-4 cursor-pointer" onClick={() => member.url && window.open(member.url, "_blank", "noopener noreferrer")}>
                   <img
                     src={member.image}
                     alt={member.name}
