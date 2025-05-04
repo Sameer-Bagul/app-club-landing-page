@@ -8,21 +8,36 @@ const Projects = () => {
       description: "Debris AI is an advanced AI-powered solution designed to detect and classify space debris using computer vision. Built with Python and TensorFlow, this project helps space agencies track and monitor potential collision risks in Earth's orbit.",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80",
       tech: ["AI", "TensorFlow", "Python", "OpenCV"],
-      stars: 128
+      stars: 128,
+      Github_repo_link: "",
+      websitelink: "",
+      owner: "",
+      open_source: true,
+      
     },
     {
       title: "SmartLearn Hub",
       description: "An intelligent learning management system that adapts to each student's learning pace and style. Features include AI-powered content recommendations, progress tracking, and interactive assessments.",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80",
       tech: ["React", "Node.js", "MongoDB", "Machine Learning"],
-      stars: 95
+      stars: 95,
+      Github_repo_link: "",
+      websitelink: "",
+      owner: "",
+      open_source: true,
+      
     },
     {
       title: "EcoTrack",
       description: "A mobile application for tracking and reducing carbon footprint. Users can monitor their daily activities, get personalized suggestions for eco-friendly alternatives, and connect with like-minded individuals.",
       image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80",
       tech: ["React Native", "Firebase", "Node.js", "GraphQL"],
-      stars: 84
+      stars: 84,
+      Github_repo_link: "",
+      websitelink: "",
+      owner: "",
+      open_source: true,
+      
     }
   ];
 
